@@ -1,4 +1,4 @@
-<h1>Restaurants in your Area</h1>
+<!-- <h1>Restaurants in your Area</h1>
 
 <table>
   <tr>
@@ -9,17 +9,26 @@
     <th></th>
   </tr>
 
-<% @restaurants.each do |restaurant| %>
+<% #@restaurants.each do |restaurant| %>
   <tr>
-    <td><%= restaurant.name %></td>
-    <td><%= restaurant.location %></td>
-    <td><%= link_to 'Show', restaurant %></td>
-    <td><%= link_to 'Edit', edit_restaurant_path(restaurant) %></td>
-    <td><%= link_to 'Destroy', restaurant, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%#= restaurant.name %></td>
+    <td><%#= restaurant.location %></td>
+    <td><%#= link_to 'Show', restaurant %></td>
+    <td><%#= link_to 'Edit', edit_restaurant_path(restaurant) %></td>
+    <td><%#= link_to 'Destroy', restaurant, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
-<% end %>
+<% #end %>
 </table>
 
 <br />
 
 <%= link_to 'New Restaurant', new_restaurant_path %>
+ -->
+<h1> Search Restaurants </h1>
+<%= form_tag search_restaurants_path, :method => 'get' do %>
+  <p>
+ <%= text_field_tag :search, params[:search] %>
+ <%= submit_tag "Search", :location => nil %>
+  </p>
+  <% end %>
+

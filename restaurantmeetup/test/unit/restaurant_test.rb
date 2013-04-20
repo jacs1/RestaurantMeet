@@ -8,7 +8,6 @@ class RestaurantTest < ActiveSupport::TestCase
   	end
   	should 'have values from yelp' do 
   		assert_not_nil @restaurant 
-  	binding.pry
   	end
   end
 end

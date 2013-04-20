@@ -1,14 +1,12 @@
 class RestaurantsController < ApplicationController
   # GET /restaurants
   # GET /restaurants.json
-  def index
-    @restaurants = Restaurant.all
-
-    respond_to do |format|
+def index
+      respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @restaurants }
-    end
   end
+end
 
   # GET /restaurants/1
   # GET /restaurants/1.json
@@ -21,6 +19,10 @@ class RestaurantsController < ApplicationController
     end
   end
 
+  def search 
+    @restaurants = Restaurant.search_yelp(params[:search])
+
+  end
   # GET /restaurants/new
   # GET /restaurants/new.json
   def new

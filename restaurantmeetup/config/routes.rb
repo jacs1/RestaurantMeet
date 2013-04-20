@@ -4,7 +4,12 @@ Restaurantmeetup::Application.routes.draw do
   resources :addresses
 
 
-  resources :restaurants
+  resources :restaurants do
+    collection do 
+      get :search
+    end
+  end
+
 
 
   resources :groups

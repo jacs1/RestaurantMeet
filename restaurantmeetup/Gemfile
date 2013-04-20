@@ -28,6 +28,7 @@ gem 'jquery-rails'
 gem 'shoulda'
 gem 'pry'
 gem 'yelpster'
+gem 'pry-debugger'
 # gem 'omniauth'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby',x '~> 3.0.0'

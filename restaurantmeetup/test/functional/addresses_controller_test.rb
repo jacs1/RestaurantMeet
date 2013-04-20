@@ -48,11 +48,9 @@ class AddressesControllerTest < ActionController::TestCase
     assert_response :user
   end
 
-  test "give me a list of addresses" do 
-    assert_equal 1, @users.length
-    assert @addresses.first.is_a?(Address)
-    assert_equal "68 Hastings Drive", @addresses.first.location
+  
 
   #   assert_redirected_to addresses_path
   # end
 end
+
