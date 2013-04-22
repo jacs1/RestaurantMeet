@@ -1,3 +1,5 @@
+<html xmlns:fb="http://ogp.me/ns/fb#">
+<body>
 <!-- <h1>Listing addresses</h1>
 
 <table>
@@ -21,7 +23,7 @@
 <br />
 
 <%= link_to 'New Address', new_address_path %> -->
-<body>
+
 <h1>Restaurant Meet Up </h1>
 
 <h3>The Easiest Way to Organize a Night Out with Friends!</h3>
@@ -32,5 +34,21 @@
     <button type="submit">Sign In</button>
 </form>
 
-<img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRSOXP3UFn-6D8SlYZ-fiyIEhWzesGVUvO0I21y60qgaXI-fs3Ckw" />
+<img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRSOXP3UFn-6D8SlYZ-fiyIEhWzesGVUvO0I21y60qgaXI-fs3Ckw" width="300" height="300"/>
+</body>
+
+<div id="fb-root"></div>
+
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<p><fb:like href="http://joesimoes.tumblr.com/" send="false" width="450" show_faces="false"></fb:like></p>
+
+<p><a href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></p>
 </body>

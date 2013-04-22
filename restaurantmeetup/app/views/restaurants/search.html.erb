@@ -5,14 +5,17 @@
 <link rel="stylesheet" type="text/css" href="/restaurants.css" />
 <h1> Search Results </h1>
 	<body>
-	
+		
+		
 		<p><% @restaurants.each do |x| %></p>
 		<p><img src="<%= x.location %>" /></p>	
+		<p><img src="<%= x.rating_img_url_small %>" /></p>  
 		<p><%= x.name %></p>
 		<p><%= x.address %></p>
 		<p><%= x.city %></p>
 		<p><%= x.zip %></p>
-		<p><img src="<%= x.rating_img_url_small %>" /></p>
+
+		
 		<% end %>
 
 	

@@ -1,3 +1,43 @@
-// Place all the styles related to the Users controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+html{
+  min-height:100%;
+}
+
+img {
+  border: 5px solid magenta; 
+  border-radius: 30px;
+  width: 400px;
+  height: auto;
+  margin-right: 20px;
+  -webkit-box-shadow: 4px 4px 4px hsla(232, 100%, 50%, .5);
+}
+
+
+#form{
+  margin-left:38%;
+}
+
+body {
+  font-family: "Lucida Bright", Georgia, serif; 
+ background-image: -webkit-gradient(linear, right bottom, left top, color-stop(0, #FFFFFF), color-stop(1, #0A3FEF));
+
+}
+h1 {
+  font-size: 6em;
+  text-align: center;
+  font-family: garamond;
+  font-weight: bold;
+}
+h3 {
+  font-size: 2em;
+  text-align: center;
+  font-family: garamond;
+  font-weight: bold;
+}
+div {
+  width: 300px;
+}
+
+aside {
+  float: left;
+}
+

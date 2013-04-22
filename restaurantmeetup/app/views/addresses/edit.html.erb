@@ -1,6 +1,32 @@
-<h1>Editing address</h1>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="/vendor/jquery-1.9.1.min.js" type="text/javascript"></script>
+  <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/vendor/bootstrap/css/style.css">
+  <link rel="stylesheet" href="/vendor/bootstrap/css/screen.css">
+</head>
 
-<%= render 'form' %>
 
-<%= link_to 'Show', @address %> |
-<%= link_to 'Back', addresses_path %>
+</div>
+<% if flash[:notice] %>
+  <div class="flash">
+    <%= flash[:notice] %>
+  </div>
+<% end %>
+
+<ul class="nav nav-tabs navbar-fixed-top">
+  <li><a href="/login">Login</a></li>
+  <li><a href="#">Create New</a></li>
+  <li><a href="#">Placeholder!!</a></li>
+  <li><a href="#">Placeholder</a></li>
+</ul>
+
+<div class="container">
+  <%= yield %>
+</div>
+</body>
+</html>

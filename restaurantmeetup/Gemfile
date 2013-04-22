@@ -10,7 +10,6 @@ gem 'nokogiri'
 # gem 'yelp4r'
 
 
-
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -29,6 +28,7 @@ gem 'shoulda'
 gem 'pry'
 gem 'yelpster'
 gem 'pry-debugger'
+gem 'heroku'
 # gem 'omniauth'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby',x '~> 3.0.0'
