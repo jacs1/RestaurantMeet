@@ -3,7 +3,9 @@
   <b>Name:</b>
   <%= @group.name %>
 </p>
-HELLO
 
+<form method="get" action="/restaurants">
+    <button type="submit">Find All of the Restaurants Ever</button>
+</form>
 <%= link_to 'Edit', edit_group_path(@group) %> |
 <%= link_to 'Back', groups_path %>

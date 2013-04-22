@@ -1,7 +1,33 @@
-<h1> Search Results </h1>
-<% @restaurants.each do |x| %>
-<p><%= x.name %></p>
 
-<p><%= x.location %></p>
-<p><%= x.rating %></p>
-<% end %>
+<html xmlns:fb="http://ogp.me/ns/fb#">
+
+
+<link rel="stylesheet" type="text/css" href="/restaurants.css" />
+<h1> Search Results </h1>
+	<body>
+	
+		<p><% @restaurants.each do |x| %></p>
+		<p><img src="<%= x.location %>" /></p>	
+		<p><%= x.name %></p>
+		<p><%= x.address %></p>
+		<p><%= x.city %></p>
+		<p><%= x.zip %></p>
+		<p><img src="<%= x.rating_img_url_small %>" /></p>
+		<% end %>
+
+	
+</body>
+<div id="fb-root"></div>
+
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<p><fb:like href="http://joesimoes.tumblr.com/" send="false" width="450" show_faces="false"></fb:like></p>
+
+<p><a href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></p>

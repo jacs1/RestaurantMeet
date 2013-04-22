@@ -11,7 +11,6 @@ end
   # GET /restaurants/1
   # GET /restaurants/1.json
   def show
-    @restaurant = Restaurant.find(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb
@@ -21,7 +20,6 @@ end
 
   def search 
     @restaurants = Restaurant.search_yelp(params[:search])
-
   end
   # GET /restaurants/new
   # GET /restaurants/new.json

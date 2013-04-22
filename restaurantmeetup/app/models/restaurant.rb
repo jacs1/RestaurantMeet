@@ -23,6 +23,10 @@ class Restaurant < ActiveRecord::Base
 			r.name = x['name']
 			r.location = x['photo_url']
 			r.rating = x['avg_rating']
+			r.address = x['address1']
+			r.city = x['city']
+			r.zip = x['zip']
+			r.rating_img_url_small = x['rating_img_url_small']
 			
 			results << r
 
@@ -30,6 +34,6 @@ class Restaurant < ActiveRecord::Base
 		results
 
 
+
 	end
 end
-
